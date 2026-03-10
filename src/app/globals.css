@@ -1,0 +1,114 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --ink: #0d0d0d;
+  --cream: #f5f2ec;
+  --gold: #c9a84c;
+  --gold-light: #e8d5a3;
+  --muted: #6b6459;
+  --line: rgba(13, 13, 13, 0.1);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--cream);
+  color: var(--ink);
+  overflow-x: hidden;
+}
+
+@layer utilities {
+  .section-label::before {
+    content: "";
+    width: 2rem;
+    height: 1px;
+    background: var(--gold);
+  }
+  .section-label {
+    @apply inline-flex items-center gap-3 text-gold font-medium mb-12;
+    font-size: 0.7rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+  }
+  .section-label::before {
+    @apply contents;
+  }
+  .btn-primary {
+    @apply inline-block px-10 py-4 bg-ink text-cream text-[0.78rem] tracking-[0.12em] uppercase font-medium no-underline border border-ink transition-all duration-300;
+  }
+  .btn-primary:hover {
+    @apply bg-gold border-gold text-ink;
+  }
+  .btn-outline {
+    @apply inline-block px-10 py-4 bg-transparent text-ink text-[0.78rem] tracking-[0.12em] uppercase font-medium no-underline border transition-all duration-300;
+    border-color: var(--line);
+  }
+  .btn-outline:hover {
+    @apply border-ink;
+  }
+}
+
+/* Marquee */
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  animation: scroll 24s linear infinite;
+}
+
+/* Reveal */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.7s, transform 0.7s;
+}
+.reveal.visible {
+  opacity: 1;
+  transform: none;
+}
+
+/* Page enter */
+@keyframes pageIn {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.page-enter {
+  animation: pageIn 0.5s ease forwards;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
