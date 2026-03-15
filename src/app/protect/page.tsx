@@ -1,9 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Reveal } from "@/components/Reveal";
-
-const HERO_IMAGE =
-  "https://images.squarespace-cdn.com/content/v1/63db310dcab0df7e90555e67/iStock-1350229534.jpg";
+import { images } from "@/lib/images";
 
 const protectItems = [
   {
@@ -98,7 +96,7 @@ export default function ProtectPage() {
       <Reveal>
         <section className="bg-ink text-cream grid grid-cols-1 md:grid-cols-2 min-h-[60vh]">
           <div className="relative overflow-hidden md:min-h-[300px]">
-            <Image src={HERO_IMAGE} alt="Brand Protection" fill className="object-cover opacity-60" sizes="50vw" />
+            <Image src={images.protectPage} alt="Brand Protection" fill className="object-cover opacity-60" sizes="50vw" />
             <div
               className="absolute inset-0"
               style={{ background: "linear-gradient(90deg, transparent 60%, #0d0d0d)" }}

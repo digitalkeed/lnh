@@ -1,9 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Reveal } from "@/components/Reveal";
-
-const GROW_IMAGE =
-  "https://images.squarespace-cdn.com/content/v1/63db310dcab0df7e90555e67/cf265b76-13f8-4ca6-8d48-9aa7ee258a26/iStock-1225609127.jpg";
+import { images } from "@/lib/images";
 
 const steps = [
   {
@@ -86,7 +84,7 @@ export default function OptimizationPage() {
           </div>
           <div className="relative aspect-[4/5] overflow-hidden">
             <Image
-              src={GROW_IMAGE}
+              src={images.optimizationPage}
               alt="Listing Optimization"
               fill
               className="object-cover grayscale-[15%]"

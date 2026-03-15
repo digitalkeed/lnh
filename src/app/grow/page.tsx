@@ -1,9 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Reveal } from "@/components/Reveal";
-
-const GROW_IMAGE =
-  "https://images.squarespace-cdn.com/content/v1/63db310dcab0df7e90555e67/cf265b76-13f8-4ca6-8d48-9aa7ee258a26/iStock-1225609127.jpg";
+import { images } from "@/lib/images";
 
 const steps = [
   {
@@ -63,7 +61,7 @@ export default function GrowPage() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-32 py-20 md:py-32 px-6 md:px-16 items-center">
           <div className="relative aspect-[4/5] overflow-hidden">
             <Image
-              src={GROW_IMAGE}
+              src={images.growPage}
               alt="Amazon Growth"
               fill
               className="object-cover grayscale-[15%]"

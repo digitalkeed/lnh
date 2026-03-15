@@ -1,9 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Reveal } from "@/components/Reveal";
-
-const DISTRIBUTE_IMAGE =
-  "https://images.squarespace-cdn.com/content/v1/63db310dcab0df7e90555e67/dce9937c-42cd-4b6d-bcbe-32f613e09c3e/iStock-1302438914.jpg";
+import { images } from "@/lib/images";
 
 const capabilities = [
   {
@@ -58,7 +56,7 @@ export default function DistributePage() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-32 py-20 md:py-32 px-6 md:px-16 items-center">
           <div className="relative aspect-[4/5] overflow-hidden">
             <Image
-              src={DISTRIBUTE_IMAGE}
+              src={images.distributePage}
               alt="Distribution"
               fill
               className="object-cover grayscale-[15%]"

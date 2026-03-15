@@ -2,13 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Reveal } from "@/components/Reveal";
 import { Marquee } from "@/components/Marquee";
-
-const HERO_IMAGE =
-  "https://images.squarespace-cdn.com/content/v1/63db310dcab0df7e90555e67/iStock-1350229534.jpg";
-const GROW_IMAGE =
-  "https://images.squarespace-cdn.com/content/v1/63db310dcab0df7e90555e67/cf265b76-13f8-4ca6-8d48-9aa7ee258a26/iStock-1225609127.jpg";
-const DISTRIBUTE_IMAGE =
-  "https://images.squarespace-cdn.com/content/v1/63db310dcab0df7e90555e67/dce9937c-42cd-4b6d-bcbe-32f613e09c3e/iStock-1302438914.jpg";
+import { images } from "@/lib/images";
 
 export default function HomePage() {
   return (
@@ -60,7 +54,7 @@ export default function HomePage() {
         </div>
         <div className="relative overflow-hidden opacity-0 animate-[fadeIn_1.2s_0.3s_forwards] md:min-h-[50vw]">
           <Image
-            src={HERO_IMAGE}
+            src={images.hero}
             alt="LNH Enterprise — Boston Amazon Consultants"
             fill
             className="object-cover scale-105 hover:scale-100 transition-transform duration-[8s] ease grayscale-[20%]"
@@ -93,7 +87,7 @@ export default function HomePage() {
               num="01"
               title="Grow"
               desc="We develop a customized strategy around your unique business goals — product listing optimization, advertising campaigns, sales analytics, quality customer service, and more. Our mission is to maximize your Amazon sales and build a strong, recognizable brand."
-              img={GROW_IMAGE}
+              img={images.grow}
               alt="Grow on Amazon"
               href="/grow"
             />
@@ -101,7 +95,7 @@ export default function HomePage() {
               num="02"
               title="Distribute"
               desc="A dynamic, customer-focused organization specializing in efficient and reliable distribution across a wide range of products. With a robust supply chain network, cutting-edge technology, and a highly-skilled team, we deliver exceptional service to businesses of all sizes."
-              img={DISTRIBUTE_IMAGE}
+              img={images.distribute}
               alt="Distribution"
               href="/distribute"
             />
@@ -109,8 +103,10 @@ export default function HomePage() {
               num="03"
               title="Brand Protection"
               desc="Safeguard your brand integrity on Amazon. We monitor and enforce your brand standards, ensuring unauthorized sellers and counterfeit products don't erode the reputation you've worked hard to build."
-              dark
+              img={images.brandProtection}
+              alt="Brand Protection"
               href="/protect"
+              dark
             />
           </div>
         </Reveal>
@@ -121,7 +117,7 @@ export default function HomePage() {
         <section className="bg-ink text-cream grid grid-cols-1 md:grid-cols-2 min-h-[60vh]">
           <div className="relative overflow-hidden md:min-h-[300px]">
             <Image
-              src={HERO_IMAGE}
+              src={images.about}
               alt="About LNH Enterprise"
               fill
               className="object-cover opacity-60"
@@ -213,7 +209,7 @@ export default function HomePage() {
           </div>
           <div className="relative">
             <Image
-              src={GROW_IMAGE}
+              src={images.features}
               alt="LNH Enterprise Solutions"
               width={600}
               height={750}
@@ -291,7 +287,7 @@ function ServiceCard({
       }`}
     >
       {img ? (
-        <div className="h-[280px] overflow-hidden">
+        <div className="h-[280px] overflow-hidden relative">
           <Image
             src={img}
             alt={alt ?? title}
@@ -299,6 +295,9 @@ function ServiceCard({
             height={280}
             className="w-full h-full object-cover transition-transform duration-500 grayscale-[30%] hover:scale-105 hover:grayscale-0"
           />
+          {dark && (
+            <div className="absolute inset-0 bg-ink/50 pointer-events-none" aria-hidden />
+          )}
         </div>
       ) : (
         <div className="h-[280px] bg-[#1a1a1a] flex items-center justify-center">

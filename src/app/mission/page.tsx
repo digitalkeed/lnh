@@ -1,11 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Reveal } from "@/components/Reveal";
-
-const HERO_IMAGE =
-  "https://images.squarespace-cdn.com/content/v1/63db310dcab0df7e90555e67/iStock-1350229534.jpg";
-const GROW_IMAGE =
-  "https://images.squarespace-cdn.com/content/v1/63db310dcab0df7e90555e67/cf265b76-13f8-4ca6-8d48-9aa7ee258a26/iStock-1225609127.jpg";
+import { images } from "@/lib/images";
 
 const values = [
   {
@@ -61,7 +57,7 @@ export default function MissionPage() {
       <Reveal>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-32 py-20 md:py-32 px-6 md:px-16 items-center">
           <div className="relative aspect-[4/5] overflow-hidden">
-            <Image src={HERO_IMAGE} alt="Our Mission" fill className="object-cover grayscale-[15%]" sizes="50vw" />
+            <Image src={images.missionPage} alt="Our Mission" fill className="object-cover grayscale-[15%]" sizes="50vw" />
           </div>
           <div>
             <div className="section-label gap-3 mb-6">
@@ -111,7 +107,7 @@ export default function MissionPage() {
         <section className="bg-ink text-cream grid grid-cols-1 md:grid-cols-2 min-h-[60vh]">
           <div className="relative overflow-hidden md:min-h-[300px]">
             <Image
-              src={GROW_IMAGE}
+              src={images.missionOffice}
               alt="LNH Enterprise Team"
               fill
               className="object-cover opacity-60"
