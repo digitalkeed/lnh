@@ -243,10 +243,10 @@ export default function HomePage() {
             </Link>
             <p className="mt-5 text-[0.7rem] tracking-[0.2em] uppercase text-cream/40 mb-1">Email</p>
             <a
-              href="mailto:info@lnhenterprise.com"
+              href="mailto:info@lnh-enterprise.com"
               className="block text-cream no-underline text-base hover:text-gold transition-colors"
             >
-              info@lnhenterprise.com
+              info@lnh-enterprise.com
             </a>
             <div className="mt-8">
               <Link
@@ -287,16 +287,16 @@ function ServiceCard({
       }`}
     >
       {img ? (
-        <div className="h-[280px] overflow-hidden relative">
+        <div className="relative w-full h-[280px] overflow-hidden bg-ink">
           <Image
             src={img}
             alt={alt ?? title}
-            width={400}
-            height={280}
-            className="w-full h-full object-cover transition-transform duration-500 grayscale-[30%] hover:scale-105 hover:grayscale-0"
+            fill
+            sizes="(max-width: 768px) 100vw, 33vw"
+            className="object-cover transition-transform duration-500 grayscale-[30%] hover:scale-105 hover:grayscale-0"
           />
           {dark && (
-            <div className="absolute inset-0 bg-ink/50 pointer-events-none" aria-hidden />
+            <div className="absolute inset-0 bg-ink/40 pointer-events-none" aria-hidden />
           )}
         </div>
       ) : (

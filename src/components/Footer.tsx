@@ -27,8 +27,8 @@ export function Footer() {
           <div className="text-[0.82rem] leading-relaxed text-muted mt-6">
             Boston, MA
             <br />
-            <a href="mailto:info@lnhenterprise.com" className="text-muted no-underline hover:text-gold transition-colors">
-              info@lnhenterprise.com
+            <a href="mailto:info@lnh-enterprise.com" className="text-muted no-underline hover:text-gold transition-colors">
+              info@lnh-enterprise.com
             </a>
           </div>
         </div>
@@ -56,8 +56,8 @@ export function Footer() {
     <footer className="border-t border-[var(--line)] px-6 py-16 md:px-16 grid grid-cols-1 md:grid-cols-3 gap-12 items-start">
       <div className="text-[0.82rem] leading-relaxed text-muted">
         Boston, MA &nbsp;|&nbsp;{" "}
-        <a href="mailto:info@lnhenterprise.com" className="text-muted no-underline hover:text-gold">
-          info@lnhenterprise.com
+        <a href="mailto:info@lnh-enterprise.com" className="text-muted no-underline hover:text-gold">
+          info@lnh-enterprise.com
         </a>
       </div>
       <div className="flex flex-col gap-3">

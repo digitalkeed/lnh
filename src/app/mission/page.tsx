@@ -34,9 +34,19 @@ export default function MissionPage() {
   return (
     <>
       <div className="pt-32 md:pt-56 pb-16 md:pb-24 px-6 md:px-16 bg-ink text-cream relative overflow-hidden min-h-[50vh] flex flex-col justify-end">
+        <Image
+          src={images.heroMission}
+          alt=""
+          fill
+          className="object-cover opacity-25"
+          sizes="100vw"
+          priority
+        />
+        <div className="absolute inset-0 pointer-events-none bg-ink/60" aria-hidden />
         <div
           className="absolute inset-0 pointer-events-none"
           style={{ background: "linear-gradient(135deg, transparent 40%, rgba(201,168,76,0.06))" }}
+          aria-hidden
         />
         <div className="font-serif text-[clamp(6rem,16vw,14rem)] font-light text-white/[0.04] leading-none absolute right-16 bottom-[-2rem] tracking-tight pointer-events-none">
           Mission

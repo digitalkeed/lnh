@@ -1,14 +1,26 @@
+import Image from "next/image";
 import Link from "next/link";
 import { Reveal } from "@/components/Reveal";
 import { ContactForm } from "@/components/ContactForm";
+import { images } from "@/lib/images";
 
 export default function ContactPage() {
   return (
     <>
       <div className="pt-32 md:pt-56 pb-16 md:pb-24 px-6 md:px-16 bg-ink text-cream relative overflow-hidden min-h-[40vh] flex flex-col justify-end">
+        <Image
+          src={images.heroContact}
+          alt=""
+          fill
+          className="object-cover opacity-25"
+          sizes="100vw"
+          priority
+        />
+        <div className="absolute inset-0 pointer-events-none bg-ink/60" aria-hidden />
         <div
           className="absolute inset-0 pointer-events-none"
           style={{ background: "linear-gradient(135deg, transparent 40%, rgba(201,168,76,0.06))" }}
+          aria-hidden
         />
         <div className="section-label text-gold-light mb-6 relative z-10">
           <span className="w-8 h-px bg-gold-light" />
@@ -44,8 +56,8 @@ export default function ContactPage() {
             <div className="mb-8">
               <div className="text-[0.68rem] tracking-[0.2em] uppercase text-gold font-medium mb-1.5">Email</div>
               <div className="text-base text-ink">
-                <a href="mailto:info@lnhenterprise.com" className="text-ink no-underline hover:text-gold">
-                  info@lnhenterprise.com
+                <a href="mailto:info@lnh-enterprise.com" className="text-ink no-underline hover:text-gold">
+                  info@lnh-enterprise.com
                 </a>
               </div>
             </div>
