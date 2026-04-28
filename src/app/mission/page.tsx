@@ -75,12 +75,12 @@ export default function MissionPage() {
               Our Story
             </div>
             <h2 className="font-serif text-[clamp(2rem,3.5vw,3.5rem)] font-light leading-tight mb-8">
-              Built in Boston,
+              Built with focus,
               <br />
               focused on your <em className="italic text-gold">growth</em>
             </h2>
             <p className="text-[0.95rem] leading-[1.85] text-muted mb-5">
-              LNH Enterprise was founded in Boston, MA by a team with deep expertise in Amazon marketplace strategy,
+              LNH Enterprise was founded in 232 Kent Stone Blvd, Suite 100, Alabaster, AL 35007 by a team with deep expertise in Amazon marketplace strategy,
               e-commerce operations, and supply chain management. We saw too many great brands struggling to navigate a
               complex and ever-changing marketplace without the right support.
             </p>
@@ -131,18 +131,17 @@ export default function MissionPage() {
           <div className="py-16 md:py-24 px-6 md:pl-16 md:pr-20 flex flex-col justify-center">
             <div className="section-label text-gold-light mb-12">
               <span className="w-8 h-px bg-gold-light" />
-              Boston, MA
+              232 Kent Stone Blvd, Suite 100, Alabaster, AL 35007
             </div>
             <h2 className="font-serif text-[clamp(2.5rem,4vw,4rem)] font-light leading-tight text-cream max-w-full mb-6">
-              Rooted in New England, <em className="italic text-gold">reaching</em> every market
+              Rooted in partnership, <em className="italic text-gold">reaching</em> every market
             </h2>
             <p className="text-[0.95rem] leading-[1.85] text-cream/65 max-w-[50ch] mt-6">
-              Our headquarters in Boston puts us at the center of one of the most dynamic business ecosystems in the
-              country. We leverage that environment — the talent, the innovation culture, the entrepreneurial energy —
-              to serve brands across the United States.
+              From our headquarters in Alabama, we support brands across the United States with strategic guidance,
+              marketplace expertise, and hands-on execution.
             </p>
             <p className="text-[0.95rem] leading-[1.85] text-cream/65 max-w-[50ch] mt-4">
-              Boston is a city built on hard work and resilience. So is LNH Enterprise.
+              Hard work and resilience are central to how LNH Enterprise operates every day.
             </p>
             <Link
               href="/contact"

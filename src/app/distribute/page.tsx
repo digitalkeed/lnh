@@ -87,7 +87,7 @@ export default function DistributePage() {
               distribution process with precision and care.
             </p>
             <p className="text-[0.95rem] leading-[1.85] text-muted mb-5">
-              Operating out of Boston, MA and servicing clients nationally, LNH Enterprise brings a level of dedication
+              Operating out of 232 Kent Stone Blvd, Suite 100, Alabaster, AL 35007 and servicing clients nationally, LNH Enterprise brings a level of dedication
               and operational excellence that sets us apart from standard distributors.
             </p>
             <Link href="/contact" className="btn-primary mt-4">

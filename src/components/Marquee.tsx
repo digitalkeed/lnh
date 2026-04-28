@@ -6,7 +6,7 @@ const items = [
   "Advertising Campaigns",
   "Sales Analytics",
   "Customer Service",
-  "Boston, MA",
+  "Alabaster, AL",
 ];
 
 export function Marquee() {

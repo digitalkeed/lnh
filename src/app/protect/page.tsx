@@ -125,8 +125,8 @@ export default function ProtectPage() {
               maintain vigilant oversight of your marketplace presence and act swiftly when violations are detected.
             </p>
             <p className="text-[0.95rem] leading-[1.85] text-cream/65 max-w-[50ch] mt-4">
-              Our Boston-based team stays current with Amazon&apos;s evolving policies and tools, ensuring your brand
-              benefits from every enforcement mechanism available.
+              Our team stays current with Amazon&apos;s evolving policies and tools, ensuring your brand benefits from
+              every enforcement mechanism available.
             </p>
             <Link
               href="/contact"

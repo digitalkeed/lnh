@@ -18,6 +18,8 @@ export const images = {
   grow:            U("1460925895917-afdab827c52f"), // Laptop showing analytics dashboard
   distribute:      P(4481326),                       // Warehouse interior with palletised goods
   brandProtection: SECURITY,                          // "Security" on a computer screen
+  distributeExtra: P(6169673),                        // Loading dock team handling shipments
+  brandProtectionExtra: U("1510511459019-5dda7724fd87"), // Cybersecurity visualization
   about:           P(3182812),                        // Diverse team gathered around a laptop
   features:        U("1551288049-bebda4e38f71"),     // Dark analytics/data dashboard
 

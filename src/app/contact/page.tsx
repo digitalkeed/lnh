@@ -51,13 +51,19 @@ export default function ContactPage() {
             </h2>
             <div className="mb-8">
               <div className="text-[0.68rem] tracking-[0.2em] uppercase text-gold font-medium mb-1.5">Location</div>
-              <div className="text-base text-ink">Boston, MA</div>
+              <div className="text-base text-ink">
+                232 Kent Stone Blvd
+                <br />
+                Suite 100
+                <br />
+                Alabaster, AL 35007
+              </div>
             </div>
             <div className="mb-8">
               <div className="text-[0.68rem] tracking-[0.2em] uppercase text-gold font-medium mb-1.5">Email</div>
               <div className="text-base text-ink">
-                <a href="mailto:info@lnh-enterprise.com" className="text-ink no-underline hover:text-gold">
-                  info@lnh-enterprise.com
+                <a href="mailto:lorenc@lnh-enterprise.com" className="text-ink no-underline hover:text-gold">
+                  lorenc@lnh-enterprise.com
                 </a>
               </div>
             </div>

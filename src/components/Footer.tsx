@@ -25,10 +25,14 @@ export function Footer() {
             <Logo className="h-6 w-auto" />
           </div>
           <div className="text-[0.82rem] leading-relaxed text-muted mt-6">
-            Boston, MA
+            232 Kent Stone Blvd
             <br />
-            <a href="mailto:info@lnh-enterprise.com" className="text-muted no-underline hover:text-gold transition-colors">
-              info@lnh-enterprise.com
+            Suite 100
+            <br />
+            Alabaster, AL 35007
+            <br />
+            <a href="mailto:lorenc@lnh-enterprise.com" className="text-muted no-underline hover:text-gold transition-colors">
+              lorenc@lnh-enterprise.com
             </a>
           </div>
         </div>
@@ -55,9 +59,9 @@ export function Footer() {
   return (
     <footer className="border-t border-[var(--line)] px-6 py-16 md:px-16 grid grid-cols-1 md:grid-cols-3 gap-12 items-start">
       <div className="text-[0.82rem] leading-relaxed text-muted">
-        Boston, MA &nbsp;|&nbsp;{" "}
-        <a href="mailto:info@lnh-enterprise.com" className="text-muted no-underline hover:text-gold">
-          info@lnh-enterprise.com
+        232 Kent Stone Blvd, Suite 100, Alabaster, AL 35007 &nbsp;|&nbsp;{" "}
+        <a href="mailto:lorenc@lnh-enterprise.com" className="text-muted no-underline hover:text-gold">
+          lorenc@lnh-enterprise.com
         </a>
       </div>
       <div className="flex flex-col gap-3">

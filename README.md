@@ -1,6 +1,6 @@
 # LNH Enterprise
 
-**Sell Smarter & Grow Faster** — LNH Enterprise partners with brands to maximize their Amazon potential: listing optimization, advertising, distribution, and brand protection. Boston, MA.
+**Sell Smarter & Grow Faster** — LNH Enterprise partners with brands to maximize their Amazon potential: listing optimization, advertising, distribution, and brand protection. 232 Kent Stone Blvd, Suite 100, Alabaster, AL 35007.
 
 ## Tech Stack
 

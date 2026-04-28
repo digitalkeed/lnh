@@ -12,7 +12,7 @@ export default function HomePage() {
         <div className="flex flex-col justify-center px-6 py-16 md:px-16 md:py-24">
           <span className="inline-flex items-center gap-3 text-[0.7rem] tracking-[0.2em] uppercase text-gold font-medium mb-8 opacity-0 animate-[fadeUp_0.8s_0.2s_forwards]">
             <span className="w-8 h-px bg-gold" />
-            Amazon Growth Partners · Boston, MA
+            Amazon Growth Partners
           </span>
           <h1 className="font-serif text-[clamp(3.5rem,6vw,6rem)] font-light leading-[1.05] tracking-tight opacity-0 animate-[fadeUp_0.8s_0.35s_forwards]">
             Sell <em className="italic text-gold">Smarter</em>
@@ -55,7 +55,7 @@ export default function HomePage() {
         <div className="relative overflow-hidden opacity-0 animate-[fadeIn_1.2s_0.3s_forwards] md:min-h-[50vw]">
           <Image
             src={images.hero}
-            alt="LNH Enterprise — Boston Amazon Consultants"
+            alt="LNH Enterprise Amazon Consultants"
             fill
             className="object-cover scale-105 hover:scale-100 transition-transform duration-[8s] ease grayscale-[20%]"
             sizes="50vw"
@@ -98,6 +98,8 @@ export default function HomePage() {
               img={images.distribute}
               alt="Distribution"
               href="/distribute"
+              extraImg={images.distributeExtra}
+              extraAlt="Distribution operations"
             />
             <ServiceCard
               num="03"
@@ -106,6 +108,8 @@ export default function HomePage() {
               img={images.brandProtection}
               alt="Brand Protection"
               href="/protect"
+              extraImg={images.brandProtectionExtra}
+              extraAlt="Brand protection monitoring"
               dark
             />
           </div>
@@ -137,7 +141,7 @@ export default function HomePage() {
               Empowering brands to reach their <em className="italic text-gold">full potential</em>
             </h2>
             <p className="text-[0.95rem] leading-[1.85] text-cream/65 max-w-[50ch] mt-6">
-              LNH Enterprise is a full-service Amazon growth partner based in Boston, MA. We combine deep marketplace
+              LNH Enterprise is a full-service Amazon growth partner. We combine deep marketplace
               expertise with a genuine investment in your success — treating every brand we work with as a long-term
               partner, not just a client.
             </p>
@@ -216,7 +220,7 @@ export default function HomePage() {
               className="w-full aspect-[4/5] object-cover grayscale-[20%]"
             />
             <div className="absolute -bottom-8 -left-8 bg-ink text-cream py-6 px-8 text-[0.75rem] tracking-[0.08em] uppercase">
-              <strong>Boston</strong> Based, Nationally Reaching
+              Nationally Reaching
             </div>
           </div>
         </section>
@@ -239,14 +243,18 @@ export default function HomePage() {
           <div className="md:text-right">
             <p className="text-[0.7rem] tracking-[0.2em] uppercase text-cream/40 mb-1">Location</p>
             <Link href="/contact" className="block text-cream no-underline text-base hover:text-gold transition-colors">
-              Boston, MA
+              232 Kent Stone Blvd
+              <br />
+              Suite 100
+              <br />
+              Alabaster, AL 35007
             </Link>
             <p className="mt-5 text-[0.7rem] tracking-[0.2em] uppercase text-cream/40 mb-1">Email</p>
             <a
-              href="mailto:info@lnh-enterprise.com"
+              href="mailto:lorenc@lnh-enterprise.com"
               className="block text-cream no-underline text-base hover:text-gold transition-colors"
             >
-              info@lnh-enterprise.com
+              lorenc@lnh-enterprise.com
             </a>
             <div className="mt-8">
               <Link
@@ -270,6 +278,8 @@ function ServiceCard({
   img,
   alt,
   href,
+  extraImg,
+  extraAlt,
   dark,
 }: {
   num: string;
@@ -278,6 +288,8 @@ function ServiceCard({
   img?: string;
   alt?: string;
   href: string;
+  extraImg?: string;
+  extraAlt?: string;
   dark?: boolean;
 }) {
   return (
@@ -314,6 +326,17 @@ function ServiceCard({
         </div>
         <h3 className={`font-serif text-[1.8rem] font-normal mb-4 ${dark ? "text-cream" : ""}`}>{title}</h3>
         <p className={`text-[0.88rem] leading-[1.75] ${dark ? "text-cream/55" : "text-muted"}`}>{desc}</p>
+        {extraImg && (
+          <div className="relative w-full h-28 mt-6 overflow-hidden rounded-sm">
+            <Image
+              src={extraImg}
+              alt={extraAlt ?? `${title} detail`}
+              fill
+              sizes="(max-width: 768px) 100vw, 33vw"
+              className="object-cover"
+            />
+          </div>
+        )}
         <Link
           href={href}
           className={`inline-flex items-center gap-2 mt-6 text-[0.72rem] tracking-[0.12em] uppercase font-medium no-underline hover:gap-4 hover:text-gold transition-all ${dark ? "text-gold" : "text-ink"}`}
